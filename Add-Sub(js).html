@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .f{
+           width: 682px;
+           height: 400px;
+           background-color: aqua;
+           border: 1px solid;
+           margin: 60px auto;
+           position: relative;
+                  }
+.s1{
+    margin: 50px 0px 10px 0px;
+}
+.s2{
+    margin: 10px 0px;    
+}
+#answer{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(102, 102, 156); 
+      position: absolute;
+    top: 37px;
+    right: 180px;
+    text-align: center;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    
+    <html>
+        <head>
+              <title>Add program</title>
+
+        </head>
+        <body>
+
+            <div class="f">
+
+           <div class="s1"><label for="">Enter First Number</label> <input type="text" id="valu1" ></div>
+            <div class="s2"><label for="">Enter Seco Number</label>   <input type="text" id="valu2" ></div>
+           
+              <input type="button" value="ADD" onclick="addNumbers()"/>              
+               <input type="button" value="SUB" onclick="subNumbers()"/>
+               <input type="button" value="Clear" onclick="clr()"/>
+               <input  type="text" id="answer" name="answer" ></div>   
+       
+      <div >
+
+</div>
+
+
+      
+             <script>
+                function addNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("valu1").value);
+                        var val2 = parseInt(document.getElementById("valu2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 + val2;
+                }
+
+
+                function subNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("valu1").value);
+                        var val2 = parseInt(document.getElementById("valu2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 - val2;
+                }
+                function clr()
+                {
+                    document.body.style.backgroundColor = "red";
+
+                    document.getElementById("answer").style.backgroundColor = "yellow";
+                }
+        </script>
+      
+            </body>
+      </html>
+</body>
+</html>
