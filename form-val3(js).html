@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ah</title>
+  </head>
+<body >
+<form name="a" onsubmit="return aa()" action="user.php">
+<input type="text" name="b">
+<input type="submit">
+</form>
+<script> 
+      function aa(){
+      var x=document.a.b.value;
+      var y=/^[A-Za-z0-9]{3,10}$/;
+      var c=y.test(x);
+      if(c==true){
+alert("Successfully Entered");
+ }
+ else{
+     alert("Alphabeticals /min 3 / max 10");
+     document.a.b.focus();
+     return false;
+ }
+
+
+      } 
+        </script>
+
+
+</body>
+</html>
