@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ah</title>
+  </head>
+<body >
+   <form id="main" onclick="aa()">
+Sr No  :  <input type="text" id="a">
+Course :   <input type="text" id="b">
+
+        <input type="submit"  value="Button"> <br><br>
+
+</form>
+<table id="tb" border="1" cellspacing="20" cellpadding="20">
+ <tr>
+     <td> Sr No </td>
+     <td>Course</td>
+
+ </tr>
+ <tr>
+    <td id="a1">  </td>
+    <td is="cor1"></td>
+
+</tr>
+<tr>
+    <td id="a2">  </td>
+    <td id="cor2"></td>
+
+</tr>
+</table>
+<script> 
+function aa(){
+s1=document.getElementById("main").a.value;
+s2=document.getElementById("main").b.value;
+
+document.getElementById("a1").innerHTML=s1;
+document.getElementById("cor1").innerHTML=s2;
+
+}
+
+</script>
+
+
+</body>
+</html>
