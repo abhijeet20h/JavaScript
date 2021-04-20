@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid;
+            width: 300px;
+            height: 30px;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>          
+
+    <input type="text" id="a" onkeypress="aa()"><br>
+    Lc <div id="d1"></div> <br>
+    Uc <div id="d2"></div>
+
+
+<script>
+function aa(){
+  var x=  document.getElementById("a").value;
+  var x1=document.getElementById("d1");
+  var x2=document.getElementById("d2");
+
+  x1.innerText=x.toLowerCase();
+  x2.innerText=x.toUpperCase();
+
+}
+</script>
+        
+</body>
+</html>
