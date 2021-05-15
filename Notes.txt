@@ -1,0 +1,64 @@
+Importent things:
+- Include the <script>
+- Creating variables
+- Identify the HTML elements from the DOM
+- Events and Event Handling
+
+
+- <script> tag should be placed eigther in <head> or <body> 
+- Writing the <script> at end of the <body> tag is a good programming practice.
+
+<meta>:
+- SEO(Search Engine Optimization)
+- Responsive Web Design
+- Content About the author and all
+- Redirection purpose
+- Page refresh based on time period.
+
+innerHTML Vs innerText:
+- innerHTML will identify the html tags in the content, and also will be applied those tags to the content.
+- innerText will be used to bind only the content and if that content will contain any HTML tags will not be identified.
+- innerHTML (or) innerText both are used to get/set the content for the HTML tags and not used to set/get the content from input elements.
+- Suppose if we want to get/set the value from the input elements we use "value".
+
+Events:
+- An Event is an action performed by the user.
+- Once an event is happen to handle we use functions and we call it as "Event Handlers".
+- Examples: keyboard, mouse, load
+    keyboard
+        - keyup
+        - keydown
+        - keypress
+    Mouse
+        - mouseover
+        - click
+        - dblclick
+        - mouseout etc.
+    load
+        - load
+        - focus
+        - blur
+- Every event in Javascript will start with "on" keyword.
+
+JSON:
+- Javascript Object Notation.
+- It is a data representation, and it will store the data in key and value pair combination.
+- syntax: 
+ var person = {
+     "firstname" : 'Srikanth',
+     "salary": 12345
+ };
+
+ person.firstname => Srikanth
+ 
+
+
+
+
+
+
+
+
+
+
+
